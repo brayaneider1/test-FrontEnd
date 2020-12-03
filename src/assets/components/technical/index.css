@@ -1,0 +1,10 @@
+.technical-icon{
+    border: 2px solid #f5cb72;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
