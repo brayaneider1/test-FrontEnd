@@ -12,7 +12,7 @@
 }
 
 ion-content {
-	--ion-background-color: #fafafb;
+	--ion-background-color: transparent;
 }
 
 .border-item {
