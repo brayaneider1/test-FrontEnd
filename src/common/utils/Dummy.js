@@ -6,6 +6,9 @@ export const dummy = {
   services: [
     {
       id: "1",
+      time: "En menos de 90 segundos",
+      comment: "El técnico va en camino",
+      state: "ACTIVE",
       request: [
         {
           name: "Cambio y montaje de interruptores de luz",
@@ -18,9 +21,7 @@ export const dummy = {
             img:Electric
           },
       ],
-      time: "En menos de 90 segundos",
-      comment: "El técnico va en camino",
-      state: "ACTIVE",
+      messageCount:0
     },
     {
       id: "2",
@@ -34,6 +35,7 @@ export const dummy = {
       time: "14/ Nov /2020,9 am",
       comment: "Solicitado y agendado",
       state: "ACTIVE",
+      messageCount:1
     },
     {
         id: "3",
@@ -52,6 +54,7 @@ export const dummy = {
         time: "En menos de 90 segundos",
         comment: "El técnico va en camino",
         state: "SUCCES",
+        messageCount:2
       },
       {
         id: "4",
@@ -65,6 +68,17 @@ export const dummy = {
         time: "14/ Nov /2020,9 am",
         comment: "Solicitado y agendado",
         state: "SUCCES",
+        messageCount:1
       },
   ],
+  messages:[
+    { 
+      message:'Hola me dice el portero que no funciona el citofono. !Ta llegue¡',
+      type:1
+    },
+    { 
+      message:'De una! ya bajo entonces...',
+      type:2
+    }
+  ]
 };

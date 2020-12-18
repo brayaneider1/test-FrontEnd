@@ -1,10 +1,10 @@
 import React from "react";
 //@ts_ignore
-import { Route, Router, Switch } from "react-router-dom";
-import { IonReactRouter } from "@ionic/react-router";
+import { Route, Switch } from "react-router-dom";
 import MyService from "./Myservices/MyServices";
 import Test from "./Test/Test";
-import { IonApp, IonPage } from "@ionic/react";
+import { IonApp } from "@ionic/react";
+import Chat from "./Chat/Chat";
 
 const Private = () => {
   return (
@@ -15,6 +15,9 @@ const Private = () => {
         </Route>
         <Route exact path="/">
           <Test />
+        </Route>
+        <Route exact path="/chat">
+          <Chat />
         </Route>
       </Switch>
     </IonApp>

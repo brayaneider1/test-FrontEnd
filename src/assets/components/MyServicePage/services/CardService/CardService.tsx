@@ -28,6 +28,7 @@ const CardService = ({ services }: Props) => {
         icon={Calendar}
         data={services.time}
         message={false}
+        messageCount={services.messageCount}
 
       />
       <div className="divider" />
@@ -36,6 +37,8 @@ const CardService = ({ services }: Props) => {
         icon={Time}
         data={services.comment}
         message={true}
+        messageCount={services.messageCount}
+
       />
     </IonCard>
   );
