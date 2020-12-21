@@ -5,12 +5,14 @@ import { IonCard } from "@ionic/react";
 
 interface Props {
   technical: any;
+  setVisible: any;
+
 }
 
-const technical = ({ technical }: Props) => {
+const technical = ({ technical,setVisible }: Props) => {
   return (
     <IonCard className="m-5 p-3 h-auto shadow-md flex rounded-xl items-center justify-center  h-32 bg-white">
-      <img
+      <img onClick={()=>setVisible(true)}
         className="flex-none rounded-lg w-12 h-10 mr-4"
         src={technical.imageProfile}/>
       <div className="flex-col flex flex-grow h-auto justify-between">

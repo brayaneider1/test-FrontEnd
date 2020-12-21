@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "@ionic/core/css/core.css";
 import "@ionic/core/css/ionic.bundle.css";
 import {
@@ -18,8 +18,13 @@ import Slider from "../../../components/Slider/index";
 import { service } from "../../../../services/ServiceRequest/ServiceActions";
 
 import { useDispatch, useSelector } from "react-redux";
+import ModalPayInformation from "../../../components/Popups/ModalPayInformation";
+import ModalTechnical from "../../../components/Popups/ModalTechnical";
 
 const Test: React.FC = () => {
+
+const [visible, setvisible] = useState(false)
+
   const dispatch = useDispatch();
   const { getService, getCouncils } = service;
 
@@ -46,13 +51,14 @@ const Test: React.FC = () => {
         {services && (
           <>
             <StepsComponent />
-            <Technical technical={services[0].technical} />
+            <Technical setVisible={setvisible}  technical={services[0].technical} />
             <Service services={services} />
             <Requests request={services[0].requestAditional} />
-            <Slider councils={councils} />
+            <Slider popup={false} councils={councils} />
           </>
         )}
       </IonContent>
+      <ModalTechnical councils={councils} setVisible={setvisible} visible={visible}/>
     </IonPage>
   );
 };

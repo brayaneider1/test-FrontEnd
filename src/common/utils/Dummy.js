@@ -80,5 +80,27 @@ export const dummy = {
       message:'De una! ya bajo entonces...',
       type:2
     }
+  ],
+  councils:[
+    {
+      "id": 1,
+      "council": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+    },
+    {
+      "id": 2,
+      "council": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 3,
+      "council": "when an unknown printer took a galley of type and scrambled it to make a type"
+    },
+    {
+      "id": 4,
+      "council": " It has survived not only five centuries,"
+    },
+    {
+      "id": 5,
+      "council": "Evita mal entendidos,cuida tus pertencias y supervisa al técnico"
+    }
   ]
 };
